@@ -1,1 +1,329 @@
-# shreewinstore
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ARYAN BOSS — Official Telegram Community</title>
+
+<!-- META PIXEL CODE -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1432716458939507');
+fbq('track', 'PageView');
+</script>
+<!-- END META PIXEL CODE -->
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at 50% 30%, #241035 0%, #100819 45%, #08050e 100%);
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.background-shape {
+    position: fixed;
+    border: 1px solid rgba(180,100,255,0.12);
+    border-radius: 45px;
+    transform: rotate(-12deg);
+    pointer-events: none;
+}
+
+.shape1 {
+    width: 390px;
+    height: 230px;
+    top: 100px;
+    left: 9%;
+}
+
+.shape2 {
+    width: 370px;
+    height: 230px;
+    top: 70px;
+    right: 8%;
+    transform: rotate(-7deg);
+}
+
+.shape3 {
+    width: 300px;
+    height: 400px;
+    right: -80px;
+    top: 310px;
+    transform: rotate(25deg);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #b54cff;
+    box-shadow: 0 0 15px #a638ff,
+                0 0 35px #a638ff,
+                inset 0 0 25px #8d2bdb;
+    margin-bottom: 48px;
+    animation: glow 2s infinite alternate;
+}
+
+.logo span {
+    font-size: 105px;
+    font-weight: 900;
+    font-style: italic;
+    color: #df9cff;
+    text-shadow: 0 0 25px #bb52ff;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px #a638ff, 0 0 25px #a638ff;
+    }
+    to {
+        box-shadow: 0 0 30px #c05aff, 0 0 55px #a638ff;
+    }
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    font-weight: 900;
+    margin-bottom: 22px;
+}
+
+h1 span {
+    font-style: italic;
+}
+
+.description {
+    color: #aaa0b5;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.feature {
+    border: 1px solid #493254;
+    background: rgba(255,255,255,0.04);
+    border-radius: 30px;
+    padding: 11px 17px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #c7b8d3;
+}
+
+.feature span {
+    color: #c15aff;
+    margin-right: 7px;
+    font-size: 17px;
+}
+
+.join-btn {
+    width: 100%;
+    max-width: 520px;
+    padding: 23px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #160a20;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(100deg, #a83cff, #d47aff);
+    box-shadow: 0 0 35px rgba(183,64,255,0.4);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.join-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 50px #b84aff;
+}
+
+.ads {
+    margin-top: 35px;
+    width: 100%;
+    max-width: 610px;
+    padding: 17px;
+    border: 1px solid #493254;
+    border-radius: 40px;
+    background: rgba(255,255,255,0.03);
+    color: #aaa0b5;
+    font-size: 14px;
+}
+
+.ads strong {
+    color: #d39aff;
+    background: #321943;
+    padding: 8px 13px;
+    border-radius: 10px;
+    margin-right: 7px;
+}
+
+.ads a {
+    color: #eee0ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.privacy {
+    max-width: 710px;
+    margin-top: 38px;
+    color: #74677e;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.footer {
+    color: #66566f;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+@media(max-width:600px) {
+    .container {
+        padding: 35px 16px;
+    }
+
+    .logo {
+        width: 145px;
+        height: 145px;
+        margin-bottom: 40px;
+    }
+
+    .logo span {
+        font-size: 80px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .feature {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    .join-btn {
+        font-size: 16px;
+        padding: 21px 10px;
+    }
+
+    .ads {
+        font-size: 12px;
+        line-height: 2.2;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- META PIXEL NOSCRIPT -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1432716458939507&ev=PageView&noscript=1"/>
+</noscript>
+
+<div class="background-shape shape1"></div>
+<div class="background-shape shape2"></div>
+<div class="background-shape shape3"></div>
+
+<div class="container">
+
+    <div class="logo">
+        <span>A</span>
+    </div>
+
+    <h1>ARYAN <span>BOSS</span></h1>
+
+    <p class="description">
+        Join and enjoy with us — daily exclusive content,
+        straight to your Telegram. 100% free, forever.
+    </p>
+
+    <div class="features">
+        <div class="feature">
+            <span>ϟ</span> DAILY POSTS
+        </div>
+
+        <div class="feature">
+            <span>♧</span> GROWING COMMUNITY
+        </div>
+
+        <div class="feature">
+            <span>☆</span> EXCLUSIVE CONTENT
+        </div>
+    </div>
+
+<a class="join-btn"
+href="https://t.me/+R1B4hRP8GNRlODVl"
+target="_blank"
+rel="noopener noreferrer"
+onclick="if(typeof fbq==='function'){
+fbq('track','Subscribe');
+fbq('track','Lead');
+fbq('trackCustom','JoinTelegramClick');
+}">
+➤ JOIN TELEGRAM FREE
+</a>
+
+    <p class="privacy">
+        Privacy: This page uses Meta Pixel to measure visits
+        (PageView) and clicks on the Telegram join button
+        (JoinTelegramClick) for advertising analytics.
+        A click event does not confirm a Telegram subscription.
+        Browser and Meta settings may provide tracking controls.
+    </p>
+
+    <div class="footer">
+        ARYAN BOSS · OFFICIAL TELEGRAM COMMUNITY
+    </div>
+
+</div>
+
+</body>
+</html>
